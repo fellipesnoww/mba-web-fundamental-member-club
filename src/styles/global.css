@@ -56,3 +56,9 @@ h1 {
 h2 {
     font: var(--ff-default) var(--heading---title--sm)/1.4 var(--fw-bold);
 }
+
+.container {
+    display: grid;
+    padding-inline: 0.5rem;
+    grid-template-columns: 1fr;
+}
