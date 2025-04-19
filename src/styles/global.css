@@ -50,15 +50,31 @@ html {
 }
 
 h1 {
-    font: var(--ff-default) var(--heading---title--md)/1.4 var(--fw-bold);
+    font-size: var(--heading---title--md);
+    line-height: 1.4;
+    font-weight: var(--fw-bold);
+    color: var(--base---gray-600);
 }
 
 h2 {
-    font: var(--ff-default) var(--heading---title--sm)/1.4 var(--fw-bold);
+    font-size: var(--heading---title--sm);
+    line-height: 1.4;
+    font-weight: var(--fw-bold);
+    color: var(--base---gray-600);
 }
 
-.container {
+main {
     display: grid;
+    grid-template-areas:
+    "input"
+    "card-user"
+    "loyalty-card"
+    "cuts-needed"
+    "historic";
+
+    gap: 0.5rem;
+    align-items: center;
+    justify-items: center;
+
     padding-inline: 0.5rem;
-    grid-template-columns: 1fr;
 }

@@ -8,7 +8,7 @@ input {
     display: inline-block;
     outline: none;
     max-width: 25rem;
-    width: 21.93rem;
+    width: 100%;
     height: 3.5rem;
     padding: 0.5rem;
 
@@ -18,6 +18,10 @@ input {
 
     border: 2px solid var(--base---gray-400);
     position: relative;
+
+    grid-area: "input";
+
+    margin-bottom: 1rem;
 
     &::after {
         content: '';
