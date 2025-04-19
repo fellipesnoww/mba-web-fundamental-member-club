@@ -1,0 +1,31 @@
+header#main-header {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    padding-bottom: 1rem;
+    padding-top: 2rem;
+
+    & img {
+        width: 6.21rem;
+        height: 3rem;
+        object-fit: cover;
+    }
+}
+
+@media (width >= 80rem){
+    header#main-header {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        justify-content: center;
+        padding-bottom: 2rem;
+        padding-top: 4rem;
+    
+        & img {
+            width: 7.25rem;
+            height: 3.5rem;
+            object-fit: cover;
+        }
+    }
+}
