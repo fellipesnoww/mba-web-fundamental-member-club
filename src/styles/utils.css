@@ -7,3 +7,9 @@
 
     border-radius: 1rem;
 }
+
+.separator {
+    height: 1px;
+    background-color: var(--base---gray-300);
+    width: 100%;
+}
