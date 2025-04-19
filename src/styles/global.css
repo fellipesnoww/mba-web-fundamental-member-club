@@ -41,8 +41,18 @@
     --fw-bold: 800;
 }
 
+body {
+    background-color: var(--base---gray-200);
+}
 
 html {
-    font-family: var(--ff-default);
-    
+    font-family: var(--ff-default);  
+}
+
+h1 {
+    font: var(--ff-default) var(--heading---title--md)/1.4 var(--fw-bold);
+}
+
+h2 {
+    font: var(--ff-default) var(--heading---title--sm)/1.4 var(--fw-bold);
 }
