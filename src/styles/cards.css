@@ -26,3 +26,74 @@
         object-fit: cover;
     }
 }
+
+#loyalty-card-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    width: 100%;
+
+    & .main-info {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: flex-start;
+        flex-wrap: wrap;
+        width: 10.75rem;
+
+        & span.title {
+            font-size: var(--heading---subtitle--sm);
+            line-height: 1.4;
+            font-weight: var(--fw-bold);
+            color: var(--base---gray-500);
+            text-transform: uppercase;
+        }
+
+        & span.informative {
+            font-size: var(--body---text--xs);
+            line-height: 1.4;
+            font-weight: var(--fw-base);
+            color: var(--base---gray-500);
+        }
+    }
+}
+
+.card-id {
+    font-size: var(--heading---subtitle--sm);
+    line-height: 1.4;
+    font-weight: var(--fw-bold);
+    color: var(--base---gray-500);
+    background-color: var(--base---gray-300);
+    border-radius: 999px;
+    padding-inline: 4px;
+}
+
+.stamps {
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+    grid-template-rows: auto auto; 
+    gap: 0.5rem;
+    margin-top: 1rem;
+
+    & .stamp {
+        background-color: var(--base---gray-200);
+        border-radius: 1.25rem;
+        width: 3.5rem;
+        height: 3.5rem;
+
+        
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        & img[src*="Check"] {
+            width: 2.5rem;
+            height: 2.5rem;
+        }
+
+        & img[src*="gift"] {
+            width: 1.5rem;
+            height: 1.5rem;
+        }
+    }
+}

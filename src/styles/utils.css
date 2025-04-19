@@ -1,4 +1,5 @@
 .card-container {
+    width: 100%;
     padding: 1rem;
 
     background-color: var(--base---gray-100);
