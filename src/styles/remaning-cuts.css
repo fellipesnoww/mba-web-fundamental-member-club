@@ -1,3 +1,7 @@
+#remaning-cuts {
+    grid-area: "cuts-needed";
+}
+
 .remaning-cuts-section {
     display: flex;
     align-items: flex-end;
@@ -81,3 +85,14 @@
     }
 }
 
+@media (width >= 80em) {
+    #remaning-cuts {
+        grid-area: "cuts-needed";
+        grid-row-start: 3;
+        grid-row-end: 4;
+        grid-column-start: 2;
+        grid-column-end: 3;
+
+        max-width: 35.5rem;
+    }
+}
