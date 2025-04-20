@@ -46,6 +46,7 @@
 @media (width >= 80em) {
     .side-content {
         gap: 1rem;
+        max-height: 25.87rem;
     }
     
     .aling-left {

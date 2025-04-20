@@ -82,5 +82,6 @@
     #cuts-history {
         max-width: 20rem;
         height: 100%;
+        overflow: scroll;
     }
 }
