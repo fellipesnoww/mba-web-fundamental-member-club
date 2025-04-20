@@ -119,4 +119,23 @@
 
         max-width: 35.5rem;
     }
+
+    & .stamps {
+        gap: 1rem;
+
+        & .stamp {
+            width: 5.5rem;
+            height: 5.5rem;
+    
+            & img[src*="Check"] {
+                width: 4rem;
+                height: 4rem;
+            }
+    
+            & img[src*="gift"] {
+                width: 2.5rem;
+                height: 2.5rem;
+            }
+        }
+    }
 }

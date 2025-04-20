@@ -86,6 +86,13 @@
 }
 
 @media (width >= 80em) {
+
+    & .remaning-cuts-section {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;  
+    }
+
     #remaning-cuts {
         grid-area: "cuts-needed";
         grid-row-start: 3;
@@ -94,5 +101,35 @@
         grid-column-end: 3;
 
         max-width: 35.5rem;
+    }
+
+    .left-section {
+        max-width: 25rem;
+    }
+
+    & .right-section {
+        display: flex;
+        align-items: center;
+
+        & .progress-text {
+            font-size: var(--body---text--xs);
+            color: var(--base---gray-500);
+            margin-left: 0.75rem;
+            margin-right: 1.5rem;
+            margin-top: 2.5rem;
+        }
+        
+        & .gift-icon {
+            width: 4.5rem;
+            height: 4.5rem;
+        
+            border-radius: 50%;
+        
+            & img {
+                width: 3rem;
+                height: 3rem;
+                margin-top: 1rem;
+            }
+        }
     }
 }
