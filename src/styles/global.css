@@ -82,17 +82,8 @@ main {
 
 @media (width >= 80em) {
     main {
-        display: grid;
-        grid-template-areas:
-        "input input"
-        "card-user loyalty-card"
-        "historic loyalty-card"
-        "historic cuts-needed";
-    
-        gap: 0.5rem;
-        align-items: center;
-        justify-items: center;
-    
-        padding-inline: 0.7rem;
+        display: flex;
+        padding: 0;
+        margin: 0;
     }
 }

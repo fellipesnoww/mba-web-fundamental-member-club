@@ -12,14 +12,18 @@
     <header id="main-header">
         <img src="./src/assets/Logo.png" alt="Member Club logo"></img>
     </header>
-        <main>
-            <input 
-                type="text" 
-                id="input-search"
-                name="id-search"
-                required
-                placeholder="ID do cartão">
-            </input>
+    <form id="search" action="">
+        <input 
+            type="text" 
+            id="input-search"
+            name="id-search"
+            required
+            placeholder="ID do cartão">
+        </input>
+    </form>
+    
+    <main>
+        <div class="side-content aling-right">
             <section class="card-container customer-card">
                 <img src="src/assets/user-photo.png" alt="Foto de Natália">
                 <div class="customer-info">
@@ -70,6 +74,8 @@
                     </div>
                 </div>
             </section>
+        </div>
+        <div class="side-content aling-left">
             <section id="loyalty-card" class="card-container">
                 <header id="loyalty-card-header">
                     <div class="main-info">
@@ -78,7 +84,7 @@
                     </div>
                     <span class="card-id">ID: 124-537-835-230</span>
                 </header>
-               <div class="stamps">
+                <div class="stamps">
                     <div class="stamp">
                         <img src="src/assets/PinCheck.png" alt="Carimbo">
                     </div>
@@ -109,17 +115,17 @@
                     <div class="stamp">
                         <img src="src/assets/icons/gift.svg" alt="presente">
                     </div>
-               </div>
+                </div>
             </section>
             <section id="remaning-cuts" class="card-container">
                 <div class="remaning-cuts-section">
                     <div class="left-section">
-                      <span class="remaning-count"><strong>3</strong> cortes restantes</span>
-                      <div class="progress-bar-content">
+                        <span class="remaning-count"><strong>3</strong> cortes restantes</span>
+                        <div class="progress-bar-content">
                         <div class="progress-bar">
                             <div class="progress-fill"></div>
                         </div>
-                      </div>
+                        </div>
                     </div>
                     <div class="right-section">
                         <span class="progress-text">7 de 10</span>
@@ -127,10 +133,9 @@
                             <img src="./src/assets/PinGift.png">
                         </div>
                     </div>
-                  </div>
+                    </div>
             </section>
-            
-        </main>
-
+        </div>    
+    </main>
 </body>
 </html>

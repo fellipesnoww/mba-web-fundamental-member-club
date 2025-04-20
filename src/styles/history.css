@@ -1,5 +1,11 @@
 #cuts-history{
     grid-area: "historic";
+    width: 100%;
+
+    grid-row-start: 3;
+    grid-column-start: 4;
+
+    max-width: 25rem;
 }
 
 .history {
@@ -72,7 +78,7 @@
 }
 
 
-@media (width >= 0) {
+@media (width >= 80em) {
     #cuts-history {
         max-width: 20rem;
     }
