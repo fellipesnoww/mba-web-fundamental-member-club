@@ -13,3 +13,10 @@
     background-color: var(--base---gray-300);
     width: 100%;
 }
+
+
+.inline-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
