@@ -8,6 +8,21 @@
     max-width: 25rem;
 }
 
+  
+#cuts-history::-webkit-scrollbar {
+    background-color: transparent;
+    width: 6px;
+    z-index: -999;
+    margin-right: 100px;
+    border-radius: 12px;
+    overflow: hidden;
+}
+
+#cuts-history::-webkit-scrollbar-thumb {
+    background-color: var(--base---gray-300);
+    border-radius: 10px;
+}
+
 .history {
     display: flex;
     align-items: center;
