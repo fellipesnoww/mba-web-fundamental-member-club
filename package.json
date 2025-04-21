@@ -1,7 +1,7 @@
 {
   "name": "member-club",
   "scripts": {
-    "server": "json-server --watch server.json --port 3333",
+    "server": "json-server --watch db.json --port 3333",
     "build": "webpack",
     "dev": "webpack serve"
   },
