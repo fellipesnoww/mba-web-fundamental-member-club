@@ -57,7 +57,34 @@ function renderClientAppointmentHistory(appointmentHistory) {
     });
 }
 
+function calculateProgressPercentage(currentValue, totalValue) {
+
+    if (totalValue === 0) {
+        return "0%";
+    }
+    
+    const percentage = (currentValue / totalValue) * 100;
+    return percentage.toFixed(2) + "%"
+
+}
+
+function renderLoyaltyCard(loyaltyCard) {
+    const remaningCount = document.getElementsByClassName("remaning-count")[0];
+    remaningCount.innerHTML = `<strong>${loyaltyCard.totalCuts}</strong> cortes restantes`;
+
+    const progressText = document.getElementsByClassName("progress-text")[0];
+    progressText.textContent = `${loyaltyCard.totalCuts} de ${loyaltyCard.cutsNeeded}`;
+
+    const progressBarGradient = document.getElementsByClassName("progress-fill")[0];
+    progressBarGradient.style.width = calculateProgressPercentage(loyaltyCard.totalCuts, loyaltyCard.cutsNeeded);
+
+    if(loyaltyCard.totalCuts === loyaltyCard.cutsNeeded) {
+        alert("Parabéns! Seu próximo corte é gratuito!")
+    }
+}
+
 export function load(card) {
     renderClientInformation(card);
-    renderClientAppointmentHistory(card.appointmentHistory)
+    renderClientAppointmentHistory(card.appointmentHistory);
+    renderLoyaltyCard(card.loyaltyCard);
 }
