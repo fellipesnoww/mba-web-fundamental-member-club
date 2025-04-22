@@ -1,4 +1,6 @@
 import { searchCardByID } from '../../services/card-seach-by-id.js'
+import { load } from '../page/load.js';
+
 
 const form = document.getElementById("search");
 const input = document.querySelector("input")
@@ -13,13 +15,16 @@ function validateCardID(cardId){
     return true;
 }
 
-form.onsubmit = async(event) => {
+form.onsubmit = async (event) => {
     event.preventDefault();
     try {
         const cardId = input.value;
         if(validateCardID(cardId)){
             const cardInformation = await searchCardByID({id: cardId});
-            console.log(cardInformation);
+            
+            if(!cardInformation) return;
+
+            load(cardInformation);
         }
     } catch (error) {
         console.error("Erro no processo de busca", error);
