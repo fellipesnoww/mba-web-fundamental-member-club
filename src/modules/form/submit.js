@@ -23,6 +23,6 @@ form.onsubmit = async(event) => {
         }
     } catch (error) {
         console.error("Erro no processo de busca", error);
-        alert("Não foi possível buscar o cartão");
+        alert(error);
     }
 }

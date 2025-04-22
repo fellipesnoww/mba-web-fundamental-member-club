@@ -17,7 +17,7 @@ Acesse o figma [aqui.](https://www.figma.com/design/3ooLHBlY4RTv1XEluv4XXE/Cart%
 ## Critérios de aceite
 
 - [x] Deve ser possível buscar um cliente digitando o ID na busca e apertando a tecla Enter;
-- [ ] Deve haver uma validação pra saber se é um ID válido e existente;
+- [x] Deve haver uma validação pra saber se é um ID válido e existente;
 - [x] Deve aparecer um alerta de erro em tela caso seja um ID inválido;
 
 ### Tendo sucesso em trazer os dados de cada cliente:
