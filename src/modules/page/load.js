@@ -83,8 +83,52 @@ function renderLoyaltyCard(loyaltyCard) {
     }
 }
 
+function createStamp(stampType) {
+    const stamp = document.createElement("div");
+    stamp.classList.add("stamp");
+
+    const stamps = document.getElementsByClassName("stamps")[0];
+
+    if(stampType === "gift") {
+        const giftIcon = document.createElement("img");
+        giftIcon.setAttribute("src", "./src/assets/icons/gift.svg");
+        stamp.append(giftIcon);
+    }
+
+    if(stampType === "check") {
+        const checkIcon = document.createElement("img");
+        checkIcon.setAttribute("src", "./src/assets/PinCheck.png");
+        stamp.append(checkIcon);
+    }
+
+    stamps.append(stamp);
+}
+
+function renderStamps(card) {
+    const {id, appointmentHistory, loyaltyCard} = card;
+
+    const idSpan = document.getElementsByClassName("card-id")[0];
+    idSpan.textContent = `ID: ${id}`;
+
+    const stamps = document.getElementsByClassName("stamps")[0];
+
+    stamps.innerHTML = "";
+
+    for (let index = 0; index < 10; index++) {
+        if(index >= 0 && index <= appointmentHistory.length - 1) {
+            createStamp("check");
+        } else if(index == 9) {
+            createStamp("gift");
+        } else {
+            createStamp("");
+        }
+    }
+
+}
+
 export function load(card) {
     renderClientInformation(card);
     renderClientAppointmentHistory(card.appointmentHistory);
     renderLoyaltyCard(card.loyaltyCard);
+    renderStamps(card);
 }
