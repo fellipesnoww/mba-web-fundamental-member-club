@@ -7,10 +7,11 @@ export async function searchCardByID({ id }) {
             method: 'GET'
         });
 
-        const cards = response.json();
-
-        if(cards.lenght > 0) {
-            return cards.json();
+        const cards = await response.json();
+        
+        if(cards.length > 0) {
+            const card = cards[0];
+            return card;
         }
 
         throw new ApiError("Cartão não encontrado!");
@@ -22,5 +23,7 @@ export async function searchCardByID({ id }) {
         } else {
             alert('Houveram erros ao procurar o cartão');
         }
+
+        return null;
     }
 }
