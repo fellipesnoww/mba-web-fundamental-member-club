@@ -96,6 +96,7 @@
 @media (width >= 80em) {
     #cuts-history {
         max-width: 20rem;
+        min-height: 20rem;
         height: 100%;
         overflow: scroll;
     }
