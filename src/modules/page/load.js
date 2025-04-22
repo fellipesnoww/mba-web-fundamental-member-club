@@ -9,9 +9,9 @@ function renderClientInformation(card) {
     const sinceSpan = document.getElementById("client-since");
     sinceSpan.textContent = `Cliente desde ${clientSince}`;
 
-    // const clientPhoto = document.getElementById("client-photo");
-    // clientPhoto.setAttribute("src");
-    // clientPhoto.setAttribute("alt", `Foto de ${name}`);
+    const clientPhoto = document.getElementById("client-photo");
+    clientPhoto.setAttribute("src", `https://ui-avatars.com/api/?name=${name}`);
+    clientPhoto.setAttribute("alt", `Foto de ${name}`);
 }
 
 function renderClientAppointmentHistory(appointmentHistory) {
